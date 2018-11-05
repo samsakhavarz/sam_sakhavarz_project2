@@ -1,0 +1,34 @@
+.main-header {
+    background: $darkGreen;
+    &__content-box {
+        display: flex;
+        position: relative;
+    }
+
+    &__tagline {
+        position: absolute;
+        top: 40%;
+        left: -3%;
+ 
+    }
+
+    
+
+    &__img {
+        box-shadow: 20px 20px 0 $logoColor;
+        position: relative;
+        top: 30px;
+
+    }
+
+    &__title--large {
+        margin: auto;
+    }
+
+    
+
+    &__title--large,
+    &__img {
+        flex: 1 0 auto;
+    }
+}

@@ -1,0 +1,16 @@
+.gallery__image--large {
+    min-height: 50vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;   
+}
+
+.gallery__wrapper {
+    display: flex;
+    margin: 5% 10%;
+
+    .gallery__image {
+        width: 33%;
+        margin-right: 2%;
+    }
+}

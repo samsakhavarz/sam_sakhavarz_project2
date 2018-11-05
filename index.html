@@ -14,20 +14,25 @@
     <!-- HEADER SECTION ------------------------------------------------>
 
     <header class="main-header">
-        <div class="mobile-logo-box">
-            <h4 class="mobile-logo-box_heading">Willow</h4>
-        </div>
+        
         <nav class="top-nav">
             <ul class="top-nav__list">
-                <li class="top-nav_link"><a href=""></a>Home</li>
-                <li class="top-nav_link"><a href=""></a>About</li>
-                <li class="top-nav_link--large"><a href=""></a>Willow</li>
-                <li class="top-nav_link"><a href=""></a>Blog</li>
-                <li class="top-nav_link"><a href=""></a>Contact</li>
+                <li class="top-nav__list-item"><a class="top-nav__link" href="">Home</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link" href="">About</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link--large" href="">Willow</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link" href="blog.html">Blog</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link" href="contact.html">Contact</a></li>
            </ul>
         </nav>
-        <div class="main-header_headline">
-            <h1 class="main-header_title">Willow</h1>  
+
+        <div class="mobile-logo-box">
+            <h4 class="main-header__title--small">Willow</h4>
+        </div>
+
+        <div class="main-header__content-box wrapper">
+            <img class="main-header__tagline" src="assets/circle-text.png" alt="website tagline indicating this website is the daily musings of Willow">
+            <h1 class="main-header__title--large">Willow</h1>
+            <img class="main-header__img" src="assets/home-image-1.jpg" alt="headshot of girl with long brown hair standing in front of bamboo-like tree leaves">  
         </div>
     </header>
 
@@ -35,71 +40,134 @@
 
 <!-- ABOUT/INTRO SECTION ----------------------------------------------->
 
-        <section class="panel">
-            <div class="panel_content">
-                <h2 class="heading">Who is Willow?</h2>
-                <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illo repellat molestiae voluptates quidem cum deleniti repellendus et quisquam nam ut voluptas porro laboriosam officia soluta ratione culpa facilis natus, doloribus facere nisi nobis autem? Quo placeat quam officia omnis, eos nesciunt saepe ratione sunt recusandae ipsam nihil modi dolorem alias nam?</p>
-                <a href="" class="button">Find Out More</a>
+        <section class="intro">
+            <div class="wrapper">
+                <div class="intro__content-block">
+                    <h2 class="heading">Who's Willow?</h2>
+                    <p class="copy copy--intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illo repellat molestiae voluptates quidem cum deleniti repellendus et quisquam nam ut voluptas porro laboriosam officia soluta ratione culpa facilis natus, doloribus facere nisi nobis autem? Quo placeat quam officia omnis, eos nesciunt saepe ratione sunt recusandae ipsam nihil modi dolorem alias nam?</p>
+                    <a href="#" class="button">Find Out More</a>
+                </div>
             </div>
-        </section>
+        </section> 
 
 <!-- EDITORIAL SECTION ------------------------------------------------->
 
-        <section class="editorial">
-            <div class="editorial_row">
-                <div class="editorial_image">
+        <section class="editorial">           
+                <div class="editorial__row">
+                    <div class="editorial__img-box">
+                        <img class="editorial__image editorial__image--light-green" src="assets/home-image-2.jpg" alt="scenic photograph of bridge with waterfall in background">
+                    </div>
+    
+                    <div class="editorial__content">
+                        <h3 class="heading">Favourite Things</h3>
+                        <p class="copy copy__editorial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nesciunt obcaecati ratione. Doloremque, debitis culpa ratione omnis dolorum, deleniti laboriosam animi mollitia officia beatae corporis cum eaque, at suscipit quo.</p>
+                        <a href="" class="button">Read More</a>
+                    </div>
                 </div>
-
-                <div class="editorial_content">
-                    <h3 class="heading">Favourite Things</h3>
-                    <p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nesciunt obcaecati ratione. Doloremque, debitis culpa ratione omnis dolorum, deleniti laboriosam animi mollitia officia beatae corporis cum eaque, at suscipit quo.</p>
-                    <a href="" class="button">Read More</a>
-                </div>
-            </div>
-
-            <div class="editorial_row">
-                <div class="editorial_content">
-                    <h3 class="heading">Bucket List</h3>
-                    <p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nesciunt obcaecati ratione. Doloremque,debitis culpa ratione omnis dolorum, deleniti laboriosam animi mollitia officia beatae corporis cum eaque, at suscipit quo.</p>
-                    <a href="" class="button">Read More</a>
-                </div>
-            
-                <div class="editorial_image">
-                </div>   
-            </div>
+    
+                <div class="editorial__row editorial__row--row2">
+                    <div class="editorial__img-box editorial__img-container--row2">
+                        <img src="assets/home-image-3.jpg" alt="close up photograph of flower floating near lily pad" class="editorial__image editorial__image--dark-green">
+                    </div> 
+    
+                    <div class="editorial__content editorial__content--row2">
+                        <h3 class="heading">Bucket List</h3>
+                        <p class="copy copy__editorial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nesciunt obcaecati ratione. Doloremque,debitis culpa ratione omnis dolorum, deleniti laboriosam animi mollitia officia beatae corporis cum eaque, at suscipit quo.</p>
+                        <a href="" class="button">Read More</a>
+                    </div>            
+                </div>                      
         </section>
 
-        <section class="panel">
-            <div class="panel_image">
 
-            </div>
-            <div class="panel_content">
-                <h2 class="heading">Willow's Journey</h2>
-                <p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi reiciendis expedita eos facilis illo veritatis, laudantium ratione exercitationem similique non reprehenderit dicta? Eius, sunt, aliquam dignissimos corrupti repellendus iste fugit laborum magni facere accusantium, consequuntur earum. Eveniet eius quo inventore quibusdam vitae odit, dignissimos minus iusto molestiae fugit, at provident.</p>
-                <a href="" class="button">Find out More</a>
-            </div>
+<!-- WILLOW'S JOURNEY SECTION ------------------------------------------------->
+
+        <section class="journey">
+                <div class="journey-container">   
+                    <div class="journey-container__image-box">
+                        <img class="journey-container__image-box--image" src="assets/home-image-4.jpg" alt="rear image of girl with yellow raincoat in a green forest-like setting">
+                    </div>
+        
+                    <div class="journey-container__content-box">
+                        <h2 class="heading">Willow's Journey</h2>
+                        <p class="copy copy--intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi reiciendis expedita eos facilis illo veritatis, laudantium ratione exercitationem similique non reprehenderit dicta? Eius, sunt, aliquam dignissimos corrupti repellendus iste fugit laborum magni facere accusantium, consequuntur earum. Eveniet eius quo inventore quibusdam vitae odit, dignissimos minus iusto molestiae fugit, at provident.</p>
+                        <a href="" class="button">Find out More</a>
+                    </div> 
+                </div>
         </section>
+
+<!-- GALLERY SECTION ------------------------------------------------------------->
 
         <section class="gallery">
-            <img src="" alt="" class="gallery_hero">
-            <div class="gallery_wrapper">
-                <img src="" alt="" class="gallery_image">
-                <img src="" alt="" class="gallery_image">
-                <img src="" alt="" class="gallery_image">
+            <div class="gallery__hero">
+                <img src="assets/home-image-5.jpg" alt="panoramic scene of a meadow of flowers with a house in background near cloudy mountains" class="gallery__image--large">
+            </div>
+            <div class="gallery__wrapper">
+                <img src="assets/home-image-6.jpg" alt="image of empty winding highway road" class="gallery__image">
+                <img src="assets/home-image-7.jpg" alt="close up image of a bowl of lemons on a table" class="gallery__image">
+                <img src="assets/home-image-8.jpg" alt="photo of winding staircase with star-pattern wallpaper on walls" class="gallery__image">
             </div>
         </section>   
     </main>
 
-    <footer class="panel">
-        <div class="panel_content">
+<!-- FOOTER WITH ICONS SECTION------------------------------------------------------>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__row">
+            <div class="footer__content">
+                <div class="footer__icon-box">
+                    <a class="footer__icon" href=""><i class="fas fa-image"></i></a>
+                </div>
 
+                <div class="footer__copy-block">
+                    <h4 class="heading">Photos</h4>
+                    <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero assumenda consequuntur asperiores id repellat voluptates minima consectetur fugit adipisci. At, nihil repellat. Atque, ratione officia.</p>
+                </div>
+            </div>
 
+            <div class="footer__content">
+                <div class="footer__icon-box">
+                    <a class="footer__icon" href=""><i class="far fa-user"></i></a>
+                </div>
+
+                <div class="footer__copy-block">
+                    <h4 class="heading">About</h4>
+                    <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero assumenda consequuntur asperiores id repellat voluptates minima consectetur fugit adipisci. At, nihil repellat. Atque, ratione officia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__row">
+            <div class="footer__content">
+                <div class="footer__icon-box">
+                    <a class="footer__icon" href=""><i class="fas fa-desktop"></i></a>
+                </div>
+
+                <div class="footer__copy-block">
+                    <h4 class="heading">Blog</h4>
+                    <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero assumenda consequuntur asperiores id repellat voluptates minima consectetur fugit adipisci. At, nihil repellat. Atque, ratione officia.</p>
+                </div>
+            </div>
+      
+            <div class="footer__content">
+                <div class="footer__icon-box">
+                    <a class="footer__icon" href=""><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="footer__copy-block">
+                    <h4 class="heading">Contact Me</h4>
+                    <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero assumenda consequuntur asperiores id repellat voluptates minima consectetur fugit adipisci. At, nihil repellat. Atque, ratione officia.</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+</footer>
+
+<!-- SECONDARY FOOTER SECTION ----------------------------------------------------------->
+
+        <div class="secondary-footer">
+            <p class="secondary-footer__text">Copyright &copy 2018 HackerYou</p>
         </div>
 
 
-
-
-    </footer>
     
 </body>
 </html>

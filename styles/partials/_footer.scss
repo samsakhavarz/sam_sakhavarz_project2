@@ -1,0 +1,41 @@
+
+.footer {
+    padding: 5% 0;
+    
+
+    .footer__row {
+        display: flex;
+        
+        .footer__content {
+            display: flex;
+            width: 50%;
+            align-items: baseline; 
+        }
+        
+        .footer__icon {
+            font-size: 40px;
+            color: #000;
+            background: $accentColor;
+            padding: 20px;
+            border-radius: 50%;
+            width: 10%;
+        }
+
+        .footer__copy-block {
+            width: 100%;
+            padding: 30px;
+        }
+    }    
+}
+
+.secondary-footer {
+    background: $primaryColor;
+    line-height: 20px;
+    padding: 10px;
+    &__text {
+        @include copyText;
+        @include baseFont(18);
+        color: $logoColor;
+        text-align: center;
+    }
+}

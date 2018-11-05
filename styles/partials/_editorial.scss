@@ -1,0 +1,45 @@
+
+.editorial__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editorial__row--row2 {
+    flex-direction: row-reverse; 
+    padding: 2% 0;
+}
+
+.editorial__content,
+.editorial__img-box {
+    width: 50%;
+}
+
+.editorial__content {
+    padding: 20px 40px;
+}
+
+.editorial__content--row2 {
+    text-align: right;
+}
+
+
+.editorial__image {
+    position: relative;
+    &--light-green {
+        box-shadow: 20px 20px 0 $lightGreen, -170px 20px 0 $lightGreen;
+        top: -50px; 
+        margin-left: 20%;
+
+    }
+    &--dark-green {
+        box-shadow: 170px 20px 0 $darkGreen, 20px 20px 0 $darkGreen; 
+        bottom: -50px;  
+    }    
+
+}
+   
+    
+
+
+
+

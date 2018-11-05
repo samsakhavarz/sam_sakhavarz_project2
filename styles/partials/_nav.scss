@@ -1,0 +1,33 @@
+.top-nav {
+    background: $darkGreen;
+    padding: 20px 20px 15px 20px;
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 29px;
+    }
+    &__list-item {
+        list-style: none;
+    } 
+    &__link {
+        @include copyText;
+        @include baseFont(20);
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $logoColor;
+        font-weight: 700;
+        padding: 0 20px;
+    }
+    &__link--large {
+        @extend .top-nav__link;
+        @include logoText;
+        @include baseFont(33);
+    }
+}
+
+.mobile-logo-box {
+    display: none;
+}
+

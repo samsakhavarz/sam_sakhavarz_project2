@@ -5,10 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Willow</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
+<!-- HEADER SECTION ------------------------------------------------>
+    
+    <header class="contact-header">
+        <nav class="top-nav">
+            <ul class="top-nav__list">
+                <li class="top-nav__list-item"><a class="top-nav__link" href="">Home</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link" href="">About</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link--large" href="">Willow</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link" href="blog.html">Blog</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-logo-box">
+            <h4 class="mobile-logo-box__heading">Willow</h4>
+        </div>
+
+        <div class="contact-header__headline">
+            <h1 class="contact-header__title">Contact Me</h1>
+        </div>
+    </header>
+
+<!--  CONTACT SIDEBAR SECTION ------------------------------------------------>
+
+    <aside class="sidebar">
+        <div class="icon-list">
+            <a class="icon-list__social-link" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="icon-list__social-link" href=""><i class="fab fa-twitter"></i></a>
+            <a class="icon-list__social-link" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="icon-list__social-link" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="address-block">
+            <p class="address-block__copy--bold">info@email.com</p>
+            <p class="address-block__copy">416-867-5309</p>
+            <p class="address-block__copy">123 Queen St West, Unit 10</p>
+            <p class="address-block__copy">Toronto, Ontario</p>
+            <p class="address-block__copy">M5V 2D5</p>        
+        </div>       
+    </aside>
+
+<!-- CONTACT FORM SECTION -------------------------------------------------->
+
+    <section class="form-box">
+        <form action="" class="form">
+            <label class="form__label visuallyhidden" for="name">Enter name</label>
+            <input class="form__input" name="name" type="text" placeholder="name">
+            <label class="form__label visuallyhidden" for="email address">Enter email address</label>
+            <input class="form__input" name="email" type="emailaddress" placeholder="email address">
+            <label class="form__label visuallyhidden" for="comment">Enter comment</label>
+            <input class="form__input" name="comment" type="text" placeholder="Message">
+            <button class="form__button">Submit</button>
+        </form>
+    </section>
+
+<!-- FOOTER SECTION ------------------------------------------------------->
+
+<div class="secondary-footer">
+    <p class="secondary-footer__text">Copyright &copy 2018 HackerYou</p>
+</div>
+
     
 </body>
 </html>

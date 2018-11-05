@@ -1,0 +1,78 @@
+$primaryColor: #1f1f1f;
+$logoColor: #fff;
+$accentColor: #e4a436;
+$backgroundColor: #f6f6f6;
+$darkGreen: #345231;
+$lightGreen: #709b6b;
+
+
+
+//  TYPOGRAPHY MIXINS ------------------------------------------>
+
+@mixin baseFont($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+@mixin logoText {   
+    font-family: 'Abril Fatface', serif;
+    color: $logoColor;
+    text-transform: uppercase;
+}
+
+@mixin headingText {
+    font-family: 'Abril Fatface', serif;  
+    color: $primaryColor;
+    text-transform: uppercase;
+    letter-spacing: 1px;  
+}
+
+@mixin copyText {
+    font-family: 'Montserrat', sans-serif;
+    color: $primaryColor;
+
+}
+
+// TYPOGRAPHY STYLES ---------------------------------------------->
+
+
+.main-header__title--large {
+    @include logoText;
+    @include baseFont(80);
+}
+
+.heading {
+    @include headingText;
+    @include baseFont(42);
+    margin: 0;
+}
+
+.copy {
+    @include copyText;
+    @include baseFont(20);
+    margin: 0;
+}
+
+.button {
+    @include headingText;
+    @include baseFont(20);
+    background: $accentColor;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+
+// LAYOUT STYLES ---------------------------------------------------->
+
+.wrapper {
+    // max-width: 1080px;
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+.panel {
+    padding: 40px 0;
+}

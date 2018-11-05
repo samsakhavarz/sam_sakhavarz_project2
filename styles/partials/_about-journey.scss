@@ -1,0 +1,53 @@
+// ABOUT SECTION --------------------------
+
+.intro,
+.journey,
+.footer {
+       background: $backgroundColor;
+
+       &__content-block {
+           display: flex;
+           text-align: center;
+           flex-direction: column;
+           align-items: center;
+           align-content: space-between;
+           padding: 8% 0 8% 0;
+        }         
+}
+
+.copy--intro {
+    padding: 2% 0 5% 0;
+}
+
+// WILLOW'S JOURNEY SECTION 
+.journey-container {
+    display: flex;
+    margin: 0 5%;
+    padding: 5%;
+    &__image-box {
+        width: 20%;
+        margin-right: 10%;
+    }           
+    &__content-box {
+        width: 80%;
+    }
+ .journey-container__image-box--image {
+     box-shadow: 20px 20px 0 $lightGreen;
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
