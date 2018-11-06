@@ -1,3 +1,5 @@
+// BASE STYLE COLORS ----------------------------------------->
+
 $primaryColor: #1f1f1f;
 $logoColor: #fff;
 $accentColor: #e4a436;
@@ -5,6 +7,27 @@ $backgroundColor: #f6f6f6;
 $darkGreen: #345231;
 $lightGreen: #709b6b;
 
+html {
+    font-size: 62.5%;
+}
+img {
+    max-width: 100%;
+}
+
+// VISUALLY HIDDEN LABELS ------------------------------------->
+
+.visuallyhidden:not(:focus):not(:active) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+    }
 
 
 //  TYPOGRAPHY MIXINS ------------------------------------------>
@@ -38,6 +61,11 @@ $lightGreen: #709b6b;
 
 .main-header__title--large {
     @include logoText;
+    @include baseFont(100);
+}
+
+.page-heading {
+    @include logoText;
     @include baseFont(80);
 }
 
@@ -45,12 +73,27 @@ $lightGreen: #709b6b;
     @include headingText;
     @include baseFont(42);
     margin: 0;
+
+}
+
+.heading--small {
+    @include headingText;
+    @include baseFont(32);
+    margin: 0;
+}
+
+.blog-heading {
+    @include headingText;
+    @include baseFont(24);
+    padding: 5% 0 0 0;
+
 }
 
 .copy {
     @include copyText;
     @include baseFont(20);
-    margin: 0;
+    line-height: 2.6rem;
+
 }
 
 .button {
@@ -65,11 +108,13 @@ $lightGreen: #709b6b;
 
 
 // LAYOUT STYLES ---------------------------------------------------->
-
+.main {
+    background: $backgroundColor;
+}
 .wrapper {
-    // max-width: 1080px;
+    max-width: 1280px;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
 
 }
 

@@ -1,8 +1,7 @@
 
 .footer {
-    padding: 5% 0;
+    padding: 5%;
     
-
     .footer__row {
         display: flex;
         
@@ -10,20 +9,22 @@
             display: flex;
             width: 50%;
             align-items: baseline; 
+            margin-right: 6%;
         }
         
         .footer__icon {
-            font-size: 40px;
+            font-size: 35px;
             color: #000;
             background: $accentColor;
             padding: 20px;
             border-radius: 50%;
             width: 10%;
+            margin-right: 30px;
         }
 
         .footer__copy-block {
             width: 100%;
-            padding: 30px;
+            padding: 20px;
         }
     }    
 }

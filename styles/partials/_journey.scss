@@ -1,0 +1,27 @@
+// WILLOW'S JOURNEY SECTION 
+.journey {
+    padding: 8% 0;
+    margin: 0;
+}
+
+.journey-container {
+    display: flex;
+
+    .journey-container__image-box {
+        width: 35%;
+    }   
+
+    .journey-container__content-box {
+        width: 65%;
+        margin-left: 2%;
+    }
+    .copy--journey {  
+        padding: 1% 0 4% 0;
+
+    }
+ 
+}
+
+.journey-container__image-box--image {
+     box-shadow: 20px 20px 0 $lightGreen;
+ }
