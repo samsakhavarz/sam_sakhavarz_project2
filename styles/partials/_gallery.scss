@@ -14,10 +14,20 @@
 .gallery__wrapper {
     display: flex;
 
-    
 
     .gallery__image {
         width: 30%;
         margin: 5% 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery__wrapper {
+        display: block;
+    }
+
+    .gallery__wrapper .gallery__image {
+        width: 100%;
+        margin: 0;
     }
 }

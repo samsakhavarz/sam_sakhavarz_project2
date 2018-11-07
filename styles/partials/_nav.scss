@@ -40,38 +40,42 @@
     display: none;
 }
 
+// MOBILE NAV BREAKPOINTS -------------------------------------------->
 
-
-@media (max-width: 480px) {
+@media (max-width: 700px) {
     .top-nav {
         display: none;
-    }  
-
-    .mobile-logo-box {
-        display: block;
-        text-align: center;
-        margin: 0;
-        @include logoText;
-        @include baseFont(60); 
-
-        .main-header__title--small {
-            margin: 0;
-        }
-    }
-
-
+    }     
     .menu-icon {
         display: block;
         position: absolute;
         font-size: 5rem;
         top: 20px;
-        right: 20px;       
+        right: 20px; 
     }
 
     .menu-icon i {
-            color: white;
-        }
+        color: white;
+    }
 
-    
+    .main-header__title--large::before {
+        display: none;       
+    }
+
+    .main-header__title--large {
+        @include baseFont(90);
+        padding-top: 50px;
+    }
 }
+
+@media (max-width: 480px) {
+    .main-header__title--large {
+        @include baseFont(60);
+
+    }
+
+}
+
+
+
 

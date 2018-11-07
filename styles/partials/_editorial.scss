@@ -12,7 +12,6 @@
     .editorial__content,
     .editorial__img-box {
         width: 50%;
-
     }   
 }
 
@@ -39,8 +38,6 @@
 
 // IMAGE POSITIONING / STYLING -------------------------------------->
 
-
-
 .editorial__image {
     position: relative;
     &--light-green {
@@ -54,6 +51,33 @@
         // bottom: -75px;
         // left: 75px;  
     }    
+}
+
+// BREAK POINTS --------------------------------------------->
+
+@media (max-width: 999px) {
+    .editorial__row {
+        flex-direction: column;
+    }
+
+    .editorial__row .editorial__content, 
+    .editorial__row .editorial__img-box {
+        width: 100%;
+    }
+
+    .editorial__content {
+        padding: 5%;
+    }
+
+    
+
+
+
+
+    
+
+
+     
 
 }
 

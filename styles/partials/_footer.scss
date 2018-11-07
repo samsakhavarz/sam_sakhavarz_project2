@@ -4,10 +4,11 @@
     
     .footer__row {
         display: flex;
+        flex-wrap: wrap;
         
         .footer__content {
             display: flex;
-            width: 50%;
+            width: 43%;
             align-items: baseline; 
             margin-right: 6%;
         }
@@ -39,4 +40,14 @@
         color: $logoColor;
         text-align: center;
     }
+}
+
+@media (max-width: 768px) {
+    // .footer__row {
+    //     flex-direction: column;
+    // }
+    .footer .footer__row .footer__content {
+        width: 100%;
+    }
+    
 }

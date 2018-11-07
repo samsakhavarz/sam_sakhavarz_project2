@@ -26,3 +26,42 @@
 .journey-container__image-box--image {
      box-shadow: 20px 20px 0 $lightGreen;
  }
+
+ @media (max-width: 1020px) {
+     .journey-container .journey-container__content-box {
+        margin-left: 10%;
+    }
+ }
+
+ @media (max-width: 835px) {
+     .journey-container {
+         display: block;
+         width: 100%; 
+    }
+
+    .journey-container .journey-container__content-box {
+        margin: 0 auto;
+    }
+
+    .journey-container__image-box {
+        text-align: center;
+        margin: 2% auto;
+    }
+
+    .journey-container__image-box--image {
+        display: block;
+        width: 100%;
+    }
+
+    .journey-container__content-box {
+        text-align: center;
+        padding-top: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .journey-container .journey-container__content-box {
+        margin: 0;
+        width: 100%;
+    }
+}

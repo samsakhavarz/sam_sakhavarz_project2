@@ -83,17 +83,14 @@
     }    
 }
 
-@media (max-width: 768px) {
-    .main-header__title-container {
-        height: 50%;
-    }  
+@media (max-width: 480px) {
+    .main-header__image-container {
+        display: none;
+    }
+    
 }
 
-@media (max-width: 480px) {
-    .main-header__title--large {
-       display: none;
-    }   
-}
+
 
 
 
