@@ -1,54 +1,64 @@
 .editorial {
-    margin-bottom: 3%;
+    background: white;
 }
+
+// EDITORIAL PANEL STYLING / ALIGNMENT ----------------------------->
+
 
 .editorial__row {
     display: flex;
+
+
+    .editorial__content,
+    .editorial__img-box {
+        width: 50%;
+
+    }   
 }
 
 .editorial__row--row2 {
-    flex-direction: row-reverse; 
-
+    flex-direction: row-reverse;
+    margin-top: 2%;
 }
 
-.editorial__content,
-.editorial__img-box {
-    flex-basis: 50%;
-}
-
-.editorial__content {
+.editorial__content--row1 {
     padding: 2% 5%;
-    margin-top: 4%;
+    text-align: left;
 }
 
 .editorial__content--row2 {
     text-align: right;
-    // padding-top: 0;
+    padding: 2% 5%;
 }
-
-
 
 .copy__editorial {
-    padding: 2% 0 2% 0;
+    padding: 1% 0;
 }
+
+
+
+// IMAGE POSITIONING / STYLING -------------------------------------->
+
 
 
 .editorial__image {
     position: relative;
     &--light-green {
         box-shadow: 20px 20px 0 $lightGreen, -250px 20px 0 $lightGreen;
-        top: -50px; 
-        margin-left: 20%;
+        top: -30px;
+
 
     }
     &--dark-green {
         box-shadow: 250px 20px 0 $darkGreen, 20px 20px 0 $darkGreen; 
-        bottom: -75px;  
+        // bottom: -75px;
+        // left: 75px;  
     }    
 
 }
-   
-    
+
+
+
 
 
 

@@ -1,0 +1,38 @@
+.icon-list--green {
+    color: $darkGreen;
+    padding: 15px 10px;
+    font-size: 2rem;
+}
+
+.address-block__copy {
+    @include copyText;
+    @include baseFont(14);
+    line-height: 2.3rem;    
+}
+
+.address-block__copy--bold {
+    @extend .address-block__copy;
+    font-weight: bold;   
+}
+    
+.contact-box {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.flex-form__contact {
+    margin: 0 5%;
+}
+
+.form-message {
+    border: none;
+    width: 94%;
+    margin-left: 3%;
+}
+
+
+
+
+
+
+

@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Willow</title>
+    <title>Willow - Home</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link type="image/png" href="assets/favicon-32x32.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    
 </head>
 <body>
 
@@ -17,22 +20,33 @@
         
         <nav class="top-nav">
             <ul class="top-nav__list">
-                <li class="top-nav__list-item"><a class="top-nav__link" href="">Home</a></li>
-                <li class="top-nav__list-item"><a class="top-nav__link" href="">About</a></li>
-                <li class="top-nav__list-item"><a class="top-nav__link--large" href="">Willow</a></li>
-                <li class="top-nav__list-item"><a class="top-nav__link" href="blog.html">Blog</a></li>
-                <li class="top-nav__list-item"><a class="top-nav__link" href="contact.html">Contact</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link top-nav__link--accent" href="index.html">Home</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link top-nav__link--accent" href="">About</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link--large" href="index.html">Willow</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link top-nav__link--accent" href="blog.html">Blog</a></li>
+                <li class="top-nav__list-item"><a class="top-nav__link top-nav__link--accent" href="contact.html">Contact</a></li>
            </ul>
         </nav>
 
+        <div class="menu-icon">
+            <a href=""><i class="fas fa-bars"></i></a>
+        </div>
+        
         <div class="mobile-logo-box">
             <h4 class="main-header__title--small">Willow</h4>
         </div>
+    
+               
+        <div class="wrapper">
+        <div class="main-header__content-box">
+                <div class="main-header__title-container">
+                    <h1 class="main-header__title--large">Willow</h1>
+                </div> 
 
-        <div class="main-header__content-box wrapper">
-            <img class="main-header__tagline" src="assets/circle-text.png" alt="website tagline indicating this website is the daily musings of Willow">
-            <h1 class="main-header__title--large">Willow</h1>
-            <img class="main-header__img" src="assets/home-image-1.jpg" alt="headshot of girl with long brown hair standing in front of bamboo-like tree leaves">  
+               <div class="main-header__image-container">
+                   <img class="main-header__img" src="assets/home-image-1.jpg" alt="headshot of girl with long brown hair standing in front of bamboo-like tree leaves">  
+               </div>
+            </div>
         </div>
     </header>
 
@@ -45,14 +59,15 @@
                 <div class="intro__content-block">
                     <h2 class="heading">Who's Willow?</h2>
                     <p class="copy copy--intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illo repellat molestiae voluptates quidem cum deleniti repellendus et quisquam nam ut voluptas porro laboriosam officia soluta ratione culpa facilis natus, doloribus facere nisi nobis autem? Quo placeat quam officia omnis, eos nesciunt saepe ratione sunt recusandae ipsam nihil modi dolorem alias nam?</p>
-                    <a href="#" class="button">Find Out More</a>
+                    <a href="#" class="button animated pulse">Find Out More</a>
                 </div>
             </div>
         </section> 
 
 <!-- EDITORIAL SECTION ------------------------------------------------->
 
-        <section class="editorial">           
+        <section class="editorial">  
+            <div class="wrapper">                   
                 <div class="editorial__row editorial__row--row1">
                     <div class="editorial__img-box">
                         <img class="editorial__image editorial__image--light-green" src="assets/home-image-2.jpg" alt="scenic photograph of bridge with waterfall in background">
@@ -75,7 +90,8 @@
                         <p class="copy copy__editorial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nesciunt obcaecati ratione. Doloremque,debitis culpa ratione omnis dolorum, deleniti laboriosam animi mollitia officia beatae corporis cum eaque, at suscipit quo.</p>
                         <a href="" class="button">Read More</a>
                     </div>            
-                </div>                      
+                </div>  
+            </div>
         </section>
 
 
@@ -103,11 +119,14 @@
             <div class="gallery__hero">
                 <img src="assets/home-image-5.jpg" alt="panoramic scene of a meadow of flowers with a house in background near cloudy mountains" class="gallery__image--large">
             </div>
+
+        <div class="wrapper">
             <div class="gallery__wrapper">
                 <img src="assets/home-image-6.jpg" alt="image of empty winding highway road" class="gallery__image">
                 <img src="assets/home-image-7.jpg" alt="close up image of a bowl of lemons on a table" class="gallery__image">
                 <img src="assets/home-image-8.jpg" alt="photo of winding staircase with star-pattern wallpaper on walls" class="gallery__image">
             </div>
+        </div>
         </section>   
     </main>
 

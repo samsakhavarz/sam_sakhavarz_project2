@@ -18,16 +18,60 @@
         text-transform: uppercase;
         color: $logoColor;
         font-weight: 700;
-        padding: 0 20px;
+        padding: 0 20px; 
+        &--accent:hover {
+            color: $accentColor;
+            @include baseFont(23);
+            transition: 0.3s ease
+        }      
     }
     &__link--large {
         @extend .top-nav__link;
         @include logoText;
-        @include baseFont(33);
+        @include baseFont(33);       
     }
 }
 
 .mobile-logo-box {
     display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+
+@media (max-width: 480px) {
+    .top-nav {
+        display: none;
+    }  
+
+    .mobile-logo-box {
+        display: block;
+        text-align: center;
+        margin: 0;
+        @include logoText;
+        @include baseFont(60); 
+
+        .main-header__title--small {
+            margin: 0;
+        }
+    }
+
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        font-size: 5rem;
+        top: 20px;
+        right: 20px;       
+    }
+
+    .menu-icon i {
+            color: white;
+        }
+
+    
 }
 

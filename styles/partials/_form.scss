@@ -1,15 +1,18 @@
 
+// WRAPPER STYLING FOR FORM AREA ------------------------------------>
 .flex-form {
     display: flex;
     justify-content: center;
     margin-left: 25%;    
 }
 
+// FORM STYLING ------------------------------------------------------>
+
 .form__input {
     background: #fff; 
     border: none; 
-    margin: 3%;
-    width: 45%;
+    margin: 3% 2%;
+    width: 50%;
     padding: 40px 80px;
 }
 
@@ -19,21 +22,32 @@
     margin-left: 26%;
 }
 
-button {
-    display: block;
-    margin: 2% 0 2% 25%;
-    width: 75%;
+.button-box--blog {
+    width: 73%;
+    background: $accentColor;
+    text-align: center;
+    border: none;  
+    margin: 2% 0  0 26%;
+}
+
+.button-box--contact {
+    width: 94%;
+    background: $accentColor;
+    margin: 2% 0 0 3%;
+    text-align: center;
 }
 
 input, textarea {
     @include copyText;
-    @include baseFont(20);
-    padding: 40px 80px;
+    @include baseFont(15);
+    padding: 40px 90px;
 }
 
 textarea {
     color: #888888;
 }
+
+
 
 
 

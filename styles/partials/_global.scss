@@ -61,8 +61,10 @@ img {
 
 .main-header__title--large {
     @include logoText;
-    @include baseFont(100);
+    @include baseFont(130);
 }
+
+
 
 .page-heading {
     @include logoText;
@@ -92,7 +94,7 @@ img {
 .copy {
     @include copyText;
     @include baseFont(20);
-    line-height: 2.6rem;
+    line-height: 2.8rem;
 
 }
 
@@ -103,19 +105,28 @@ img {
     text-decoration: none;
     padding: 10px 20px;
     text-align: center;
+    border: none;
+    &:hover {
+        @include baseFont(25);
+        transition: 0.3s ease;
+
+    }
 }
 
 
 
+
+
 // LAYOUT STYLES ---------------------------------------------------->
+
 .main {
     background: $backgroundColor;
+    padding-bottom: 5%;
 }
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
     width: 90%;
-
 }
 
 .panel {

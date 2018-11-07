@@ -4,35 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Willow</title>
+    <title>Willow - Blog</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link type="image/png" href="assets/favicon-32x32.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
 
 <!-- HEADER SECTION ------------------------------------------------>
 
+    <nav class="top-nav">
+        <ul class="top-nav__list">
+            <li class="top-nav__list-item"><a class="top-nav__link top-nav__link--accent" href="index.html">Home</a></li>
+            <li class="top-nav__list-item"><a class="top-nav__link top-nav__link--accent" href="">About</a></li>
+            <li class="top-nav__list-item"><a class="top-nav__link--large" href="index.html">Willow</a></li>
+            <li class="top-nav__list-item"><a class="top-nav__link top-nav__link--accent" href="blog.html">Blog</a></li>
+            <li class="top-nav__list-item"><a class="top-nav__link top-nav__link--accent" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="menu-icon">
+        <a href=""><i class="fas fa-bars"></i></a>
+    </div>
+    
     <div class="mobile-logo-box">
         <h4 class="main-header__title--small">Willow</h4>
     </div>
-    
-            <nav class="top-nav">
-                <ul class="top-nav__list">
-                    <li class="top-nav__list-item"><a class="top-nav__link" href="">Home</a></li>
-                    <li class="top-nav__list-item"><a class="top-nav__link" href="">About</a></li>
-                    <li class="top-nav__list-item"><a class="top-nav__link--large" href="">Willow</a></li>
-                    <li class="top-nav__list-item"><a class="top-nav__link" href="blog.html">Blog</a></li>
-                    <li class="top-nav__list-item"><a class="top-nav__link" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-    <header class="secondary-header">
                           
-        <div class="wrapper">
-            <h1 class="page-heading">Blog & News</h1>
-        </div>
-    </header>
+        <header class="secondary-header">
+            <div class="wrapper">
+                <h1 class="page-heading">Blog & News</h1>
+            </div>
+        </header>
+
 
 <main class="main">
 
@@ -41,7 +47,6 @@
     <div class="wrapper">
         <div class="page-container">          
             <aside class="sidebar">
-
                 <div class="sidebar__box content-frame">
                     <img src="/assets/blog-image-2.jpg" alt="" class="bio__image">
                     <h2 class="heading blog-heading">About Willow</h2>
@@ -115,10 +120,10 @@
     <form action="" class="form">
         <div class="flex-form">
             <label class="form__label visuallyhidden" for="name">Enter name</label>
-            <input class="form__input" name="name" type="text" placeholder="name">
+            <input class="form__input" name="name" type="text" placeholder="Name">
     
             <label class="form__label visuallyhidden" for="email address">Enter email address</label>
-            <input class="form__input" name="email" type="emailaddress" placeholder="email address">
+            <input class="form__input" name="email" type="emailaddress" placeholder="Email address">
         </div>
 
                 
@@ -126,7 +131,11 @@
         <label class="form__label visuallyhidden" for="comment">Enter comment</label>
         <textarea class="form-comment" name="comment" id="comment" cols="30" rows="10">Comment</textarea>
 
-        <button class="button buttom--comment">Post Comment</button>
+        
+        <div class="button-box--blog">
+            <button class="button">Post Comment</button>
+        </div>
+
             
     </form>
 
